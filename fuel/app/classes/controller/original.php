@@ -29,7 +29,11 @@ class Controller_Original extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('original/index'));
+		$data = array();
+		$data['header'] = View::forge('original/header');
+		$data['navbar'] = View::forge('original/navbar');
+		$data['footer'] = View::forge('original/footer');
+		return (View::forge('index',$data));
 	}
 
 	/**
