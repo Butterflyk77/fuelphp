@@ -19,7 +19,7 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Original extends Controller
 {
 	/**
 	 * The basic welcome message
@@ -29,7 +29,7 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
+		return Response::forge(View::forge('original/index'));
 	}
 
 	/**
@@ -41,7 +41,7 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_hello()
 	{
-		return Response::forge(Presenter::forge('welcome/hello'));
+		return Response::forge(Presenter::forge('original/hello'));
 	}
 
 	/**
@@ -52,6 +52,6 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_404()
 	{
-		return Response::forge(Presenter::forge('welcome/404'), 404);
+		return Response::forge(Presenter::forge('original/404'), 404);
 	}
 }
