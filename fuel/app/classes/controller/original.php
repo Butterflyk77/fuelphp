@@ -30,10 +30,13 @@ class Controller_Original extends Controller
 	public function action_index()
 	{
 		$data = array();
-		$data['header'] = View::forge('original/header');
-		$data['navbar'] = View::forge('original/navbar');
-		$data['footer'] = View::forge('original/footer');
-		return (View::forge('index',$data));
+		$data['title'] = "乳癌防治基金會";
+
+		$view = array();
+		$view['header'] = View::forge('original/header',$data);
+		$view['navbar'] = View::forge('original/navbar');
+		$view['footer'] = View::forge('original/footer');
+		return (View::forge('index',$view));
 	}
 
 	/**
@@ -43,9 +46,16 @@ class Controller_Original extends Controller
 	 * @access  public
 	 * @return  Response
 	 */
-	public function action_hello()
+	public function action_about()
 	{
-		return Response::forge(Presenter::forge('original/hello'));
+		$data = array();
+		$data['title'] = "關於基金會";
+
+		$view = array();
+		$view['header'] = View::forge('original/header',$data);
+		$view['navbar'] = View::forge('original/navbar');
+		$view['footer'] = View::forge('original/footer');
+		return (View::forge('about',$view));
 	}
 
 	/**

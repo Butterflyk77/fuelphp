@@ -1,5 +1,18 @@
 <body id="page-top" class="index">
     <!-- <Navigat></Navigat>ion -->
+    <section class="topbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-8 topcol">
+                <ul class="topul">
+                    <li><a href="">會員登入</a></li>
+                    <li><a href="">會員註冊</a></li>
+                    <li><a href="">回到首頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">中草藥不良反應通報中心</a>
+                <a class="navbar-brand" href="index.html"><img src="public/assets/img/logo.png" alt="" class="img-responsive"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
