@@ -49,7 +49,7 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h4>Categories</h4>
-							<ol class="categories list-unstyled">
+							<ul class="categories list-unstyled">
 								<li>
 									<a class="label label-light label-primary" href="contactus.html">聯絡我們</a>
 								</li>
@@ -65,7 +65,7 @@
 								<li>
 									<a class="label label-light label-default" href="information.html">最新消息</a>
 								</li>
-							</ol>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -77,6 +77,4 @@
 		<!-- /.row -->
 	</div>
 	<!-- /.container -->
-
-
     <?php echo $footer; ?>
