@@ -12,7 +12,7 @@
 							<div class="blog-post-content">
 								<h2 class="blog-post-title">中草藥不良反應通報中心介紹</h2>
 								<h4>這是我們的理念，也是我們一貫的堅持</h4>
-								<img src="public/assets/img/about.jpg" class="img-responsive" />
+								<img src="assets/img/about.jpg" class="img-responsive" />
 								<div class="blog-post-content ans">
 									<p>西方醫學藉著自然科學的進步，引進了先進的科技成果，使其診療技術發展突飛猛進。中國醫學也正進行科際整合，以中醫理論及臨床經驗為基礎，結合現代科技與方法來發展中醫診斷儀器。而診斷的標準及統一規範，四診參數的量化是正在研究的課題。</p>
 								</div>

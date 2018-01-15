@@ -10,5 +10,6 @@ return array(
 			'username'   => 'root',
 			'password'   => '12345678',
 		),
+		'table_prefix' => 'sk_',
 	),
 );

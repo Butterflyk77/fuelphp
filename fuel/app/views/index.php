@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="public/assets/img/logo.png" alt="">
+                    <img class="img-responsive" src="assets/img/logo.png" alt="">
                     <div class="intro-text">
                         <span class="name">乳癌不良反應通報中心</span>
                         <hr class="star-light">

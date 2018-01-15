@@ -12,8 +12,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/TalksLab/metro-bootstrap@3.1.1.2/dist/css/metro-bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="public/assets/css/main.css" rel="stylesheet">
-    <link href="public/assets/css/hover.css" rel="stylesheet" >
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/hover.css" rel="stylesheet" >
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">

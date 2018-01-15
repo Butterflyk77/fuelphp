@@ -104,9 +104,9 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
-    <script src="public/assets/js/cbpAnimatedHeader.js"></script>
+    <script src="assets/js/cbpAnimatedHeader.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="public/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
