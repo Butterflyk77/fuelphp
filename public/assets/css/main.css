@@ -64,7 +64,7 @@ hr.star-primary:after {
     padding: 5px 0;
     background-color: #FFFEEE;
     position: fixed;
-    width:100%;
+    width: 100%;
     z-index: 9;
 }
 
@@ -200,8 +200,9 @@ canvas {
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-size: 1.3em;
+    font-size: 1.55rem;
     color: #FF3B80;
+    padding: 5px;
 }
 
 .navbar-default .navbar-nav>li>a:before,
@@ -257,8 +258,61 @@ canvas {
     background-color: transparent;
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    min-width: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: auto;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #7d2775;
 }
 
 #portfolio {
@@ -344,7 +398,6 @@ section.success a.active {
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
-    vertical-align: middle;
     opacity: 0;
     -webkit-transition: top .3s ease, opacity .3s ease;
     -moz-transition: top .3s ease, opacity .3s ease;

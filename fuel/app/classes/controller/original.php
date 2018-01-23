@@ -30,7 +30,7 @@ class Controller_Original extends Controller
 	public function action_index()
 	{
 		$data = array();
-		$data['title'] = "乳癌防治基金會";
+		$data['title'] ="乳癌中西醫整合治療門診";
 
 		$view = array();
 		$view['header'] = View::forge('original/header',$data);
@@ -48,8 +48,9 @@ class Controller_Original extends Controller
 	 */
 	public function action_about()
 	{
+		$data2 = DB::select('*')->from('posts')->execute()->as_array();
 		$data = array();
-		$data['title'] = "關於基金會";
+		$data['title'] = "門診介紹";
 
 		$view = array();
 		$view['header'] = View::forge('original/header',$data);
@@ -57,7 +58,6 @@ class Controller_Original extends Controller
 		$view['footer'] = View::forge('original/footer');
 		return (View::forge('about',$view));
 	}
-
 	/**
 	 * The 404 action for the application.
 	 *
