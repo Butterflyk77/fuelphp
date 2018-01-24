@@ -10,19 +10,19 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<div class="blog-post-content">
-								<h2 class="blog-post-title">乳癌中西醫整合治療門診</h2>
-								<h4>這是我們的理念，也是我們一貫的堅持</h4>
+								<h2 class="blog-post-title"><?php echo $title?></h2>
+								<h4><?php echo $subtitle?></h4>
 								<img src="assets/img/about.png" class="img-responsive" />
 								<div class="blog-post-content ans">
-								<h3>賴榮年</h3>
-									<p>中國醫藥大學 中醫學系 教授<br>
-										立夫中醫藥展示館 館長<br>
-										中國醫藥大學附設醫院中西醫整合科主治醫師<br>
-										中國民國婦產科/專科醫師<br>
-										台北市立聯合醫院/中醫婦科主任<br>
-										台北市立聯合醫院陽明院區/中醫科主任<br>
-										中國醫藥大學/中西醫醫學士<br>
-										台灣大學職業醫學/博士
+								<h3><?php echo $name?></h3>
+									<p><?php
+										$var = $body;
+										$pieces = explode("，", $var);
+										foreach($pieces as $element)
+										{
+											echo $element."<br/>";
+										}
+										?>
 									</p>
 								</div>
 							</div>
@@ -30,7 +30,7 @@
 					</div>
 				</section>
 				<!-- /.blog-post -->
-
+			
 			</div>
 			<!-- /.blog-main -->
 			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">

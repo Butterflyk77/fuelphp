@@ -48,11 +48,14 @@ class Controller_Original extends Controller
 	 */
 	public function action_about()
 	{
-		$data2 = DB::select('*')->from('posts')->execute()->as_array();
+		$data2 = DB::select('*')->from('aboutmods')->execute()->as_array();
 		$data = array();
 		$data['title'] = "門診介紹";
-
 		$view = array();
+		$view['title'] = $data2[0]['title'];
+		$view['subtitle'] = $data2[0]['subtitle'];
+		$view['name'] = $data2[0]['name'];
+		$view['body'] = $data2[0]['body'];
 		$view['header'] = View::forge('original/header',$data);
 		$view['navbar'] = View::forge('original/navbar');
 		$view['footer'] = View::forge('original/footer');

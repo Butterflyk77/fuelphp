@@ -11,8 +11,8 @@
 			<?php endif; ?>
 
 			<div class="form-group <?php echo ! $val->error('email') ?: 'has-error' ?>">
-				<label for="email">Email or Username:</label>
-				<?php echo Form::input('email', Input::post('email'), array('class' => 'form-control', 'placeholder' => 'Email or Username', 'autofocus')); ?>
+				<label for="email">使用者名稱:</label>
+				<?php echo Form::input('email', Input::post('email'), array('class' => 'form-control', 'placeholder' => '使用者名稱', 'autofocus')); ?>
 
 				<?php if ($val->error('email')): ?>
 					<span class="control-label"><?php echo $val->error('email')->get_message('You must provide a username or email'); ?></span>
@@ -20,8 +20,8 @@
 			</div>
 
 			<div class="form-group <?php echo ! $val->error('password') ?: 'has-error' ?>">
-				<label for="password">Password:</label>
-				<?php echo Form::password('password', null, array('class' => 'form-control', 'placeholder' => 'Password')); ?>
+				<label for="password">密碼:</label>
+				<?php echo Form::password('password', null, array('class' => 'form-control', 'placeholder' => '密碼')); ?>
 
 				<?php if ($val->error('password')): ?>
 					<span class="control-label"><?php echo $val->error('password')->get_message(':label cannot be blank'); ?></span>
@@ -29,7 +29,7 @@
 			</div>
 
 			<div class="actions">
-				<?php echo Form::submit(array('value'=>'Login', 'name'=>'submit', 'class' => 'btn btn-lg btn-primary btn-block')); ?>
+				<?php echo Form::submit(array('value'=>'登入', 'name'=>'submit', 'class' => 'btn btn-lg btn-primary btn-block')); ?>
 			</div>
 
 		<?php echo Form::close(); ?>

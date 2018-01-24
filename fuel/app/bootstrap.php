@@ -22,3 +22,5 @@ require COREPATH.'bootstrap.php';
 
 // Initialize the framework with the config file.
 \Fuel::init('config.php');
+
+class PHPUnit_Framework_TestCase extends \PHPUnit\Framework\TestCase{}
