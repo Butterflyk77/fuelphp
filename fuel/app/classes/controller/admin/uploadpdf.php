@@ -1,25 +1,26 @@
 <?php
-class Controller_Admin_Uploadimg extends Controller_Admin
+class Controller_Admin_Uploadpdf extends Controller_Admin
 {
 
 	public function action_index()
 	{
-        $data['uploadimgs'] = Model_Uploadimg::find('all');      
-        $this->template->title = "uploadimg";
-        $this->template->content = View::forge('admin/uploadimg/index', $data);
+        $data['uploadpdfs'] = Model_Uploadpdf::find('all');      
+        $this->template->title = "uploadpdf";
+        $this->template->content = View::forge('admin/uploadpdf/index', $data);
     }
-    public function action_add()
+
+        public function action_add()
     {
  
-    $this->template->title = '照片上傳';
-    $this->template->content = View::forge('admin/uploadimg/add');
+    $this->template->title = 'PDF上傳';
+    $this->template->content = View::forge('admin/uploadpdf/add');
 
     if (Input::method() === 'POST')
     {
     // 設定（ファイル保存場所）
     $config = array(
-    'path' => DOCROOT . '/assets/uploads/img/', 
-    'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'), 
+    'path' => DOCROOT . '/assets/uploads/pdf/', 
+    'ext_whitelist' => array('pdf'), 
     );
  
     // アップロード実行
@@ -34,7 +35,7 @@ class Controller_Admin_Uploadimg extends Controller_Admin
         {
             // 成功したファイルの処理
             // データをセット
-            $uploadimg = Model_Uploadimg::forge(array(
+            $uploadpdf = Model_Uploadpdf::forge(array(
                 'file_name' => $file['saved_as'],
                 'type' => $file['type'],
                 'size' => $file['size'],
@@ -44,10 +45,10 @@ class Controller_Admin_Uploadimg extends Controller_Admin
                 'updated_at' => 0,
             ));
  
-            if ($uploadimg->save()) // 保存
+            if ($uploadpdf->save()) // 保存
             {
                 // 登録成功
-                Session::set_flash('success', e('圖片已經成功儲存'));
+                Session::set_flash('success', e('PDF已經成功儲存'));
             }
             else
             {
@@ -65,23 +66,23 @@ class Controller_Admin_Uploadimg extends Controller_Admin
         }
  
         $this->template->title = '發生錯誤，無法儲存';
-        $this->template->content = View::forge('admin/uploadimg/error');
+        $this->template->content = View::forge('admin/uploadpdf/error');
         $this->template->content->set_safe('html_error', $html_error);
         return;
     }
     
-    		Response::redirect('admin/uploadimg');
+    		Response::redirect('admin/uploadpdf');
 
     }
 }
 
 	public function action_delete($id = null)
 	{
-		if ($uploadimg = Model_Uploadimg::find($id))
+		if ($uploadpdf = Model_Uploadpdf::find($id))
 		{
-			$uploadimg->delete();
+			$uploadpdf->delete();
 
-			Session::set_flash('success', e('刪除照片惹QQ #'.$id));
+			Session::set_flash('success', e('刪除PDF惹QQ #'.$id));
 		}
 
 		else
@@ -89,8 +90,7 @@ class Controller_Admin_Uploadimg extends Controller_Admin
 			Session::set_flash('error', e('Could not delete post #'.$id));
 		}
 
-		Response::redirect('admin/uploadimg');
+		Response::redirect('admin/uploadpdf');
 
 	}
-
 }

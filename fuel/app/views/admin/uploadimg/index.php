@@ -14,11 +14,11 @@
 <?php foreach ($uploadimgs as $item): ?>
     <tr>
         <td><?php echo $item -> file_name; ?>
-          <?php echo Asset::img('../../uploads/img/'.$item -> file_name, array('class'=>'img-responsive', 'style' => 'width:200px;height:auto;'));?>
+          <?php echo Asset::img('../uploads/img/'.$item -> file_name, array('class'=>'img-responsive', 'style' => 'width:200px;height:auto;'));?>
         </td>
         <td><?php echo $item -> type; ?></td>
         <td><?php echo $item -> size; ?></td>
-        <td><?php echo Html::anchor('admin/uploadimg/delete/'.$item->id, 'Delete', array('onclick' => "return confirm('Are you sure?')")); ?></td>
+        <td><?php echo Html::anchor('admin/uploadimg/delete/'.$item->id, 'Delete', array('onclick' => "return confirm('你確定嗎?要刪掉了喔喔喔喔')")); ?></td>
     </tr>
 <?php endforeach; ?>
 </tbody>
