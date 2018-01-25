@@ -21,6 +21,7 @@
  */
 class Controller_Original extends Controller
 {
+	public $template = 'original/template';
 	/**
 	 * The basic welcome message
 	 *

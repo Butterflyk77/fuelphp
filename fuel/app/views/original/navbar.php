@@ -84,10 +84,19 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">門診時間</a>
+                                <a href="">乳癌分期中醫介入的時機點新聞</a>
                             </li>
                             <li>
-                                <a href="">張教授專欄</a>
+                                <a href="">第一期</a>
+                            </li>
+                            <li>
+                                <a href="">第二期</a>
+                            </li>
+                            <li>
+                                <a href="">第三期</a>
+                            </li>
+                            <li>
+                                <a href="">第四期</a>
                             </li>
                         </ul>
                     </li>
@@ -97,15 +106,37 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">國內組織資訊新知</a>
+                                <a href="">乳癌中西醫治療新聞回應</a>
                             </li>
                             <li>
-                                <a href="">國際組織資訊新知</a>
+                                <a href="">乳癌中西醫治療新知</a>
                             </li>
-                             <li>
-                                <a href="">合作贊助</a>
+                            <li>
+                                <a href="">手術前</a>
+                            </li>
+                            <li>
+                                <a href="">手術後</a>
+                            </li>
+                            <li>
+                                <a href="">化療</a>
+                            </li>
+                            <li>
+                                <a href="">放療</a>
+                            </li>
+                            <li>
+                                <a href="">標靶</a>
+                            </li>
+                            <li>
+                                <a href="">荷爾蒙治療</a>
+                            </li>
+                            <li>
+                                <a href="">治療後追蹤</a>
+                            </li>
+                            <li>
+                                <a href="">復發</a>
                             </li>
                         </ul>
+
                     </li>
                   <li class="dropdown ">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">我的資料彙整
@@ -113,39 +144,41 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">乳房篩檢</a>
-                            </li>
-                            <li>
-                                <a href="">手術治療</a>
-                            </li>
-                             <li>
-                                <a href="">化學治療</a>
-                            </li>
-                             <li>
-                                <a href="">放射治療</a>
-                            </li>
-                             <li>
-                                <a href="">標靶治療</a>
-                            </li>
-                             <li>
-                                <a href="">荷爾蒙治療</a>
-                            </li>
-                             <li>
-                                <a href="">輔助性治療</a>
-                            </li>
-                             <li>
-                                <a href="">復發與轉移</a>
-                            </li>
-                             <li>
-                                <a href="">生活照護</a>
-                            </li>
-                             <li>
-                                <a href="">學術研究</a>
+                                <a href="">上傳報告</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="page-scroll">
-                        <a href="">乳癌研究</a>
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">乳癌預防
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">飲食</a>
+                            </li>
+                            <li>
+                                <a href="">運動</a>
+                            </li>
+                            <li>
+                                <a href="">其他</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">乳癌研究
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">乳癌小故事</a>
+                            </li>
+                            <li>
+                                <a href="">臨床研究</a>
+                            </li>
+                            <li>
+                                <a href="">論文發表</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="page-scroll">
                         <a href="">網路問答</a>

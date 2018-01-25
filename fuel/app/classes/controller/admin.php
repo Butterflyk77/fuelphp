@@ -98,10 +98,6 @@ class Controller_Admin extends Controller_Base
 		$this->template->content = View::forge('admin/dashboard');
 	}
 
-	public function action_aboutmod()
-	{
-		return view::forge('admin/about_mod.php');
-	}
 }
 
 /* End of file admin.php */

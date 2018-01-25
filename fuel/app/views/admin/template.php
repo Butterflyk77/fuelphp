@@ -47,20 +47,33 @@
 				<nav>
 					<ul class="nav">
 						<li class="<?php echo Uri::segment(2) == '' ? 'active' : '' ?>">
-							<?php echo Html::anchor('admin', '<i class="lnr lnr-home"></i> <span>Dashboard</span>') ?>
+							<?php echo Html::anchor('admin', '<i class="lnr lnr-home"></i> <span>首頁</span>') ?>
 						</li>
 					<?php
 						$files = new GlobIterator(APPPATH.'classes/controller/admin/*.php');
 						foreach($files as $file)
 						{
 							$section_segment = $file->getBasename('.php');
-							$section_title = Inflector::humanize($section_segment);
-							?>
+							$section_title = Inflector::humanize($section_segment);	
+							switch ($section_segment) {
+								case 'aboutmod':
+									$section_title = "關於門診修改";
+									break;
+								case 'posts':
+									$section_title = "張貼";
+									break;
+								case 'uploadimg':
+									$section_title = "上傳圖片";
+									break;
+								default:
+									$section_title = "Sean 最帥";
+									break;
+							}
+					?>
 							<li class="<?php echo Uri::segment(2) == $section_segment ? 'active' : '' ?>">
 								<?php echo Html::anchor('admin/'.$section_segment,'<i class="lnr lnr-chevron-right"></i>'.$section_title) ?>
 							</li>
-
-							<?php
+					<?php
 						}
 					?>
 					</ul>
