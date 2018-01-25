@@ -11,6 +11,7 @@ return array (
         2 => '003_create_aboutmods',
         3 => '004_create_uploadimgs',
         4 => '005_create_uploadpdfs',
+        5 => '006_create_postarticles',
       ),
     ),
     'module' => 

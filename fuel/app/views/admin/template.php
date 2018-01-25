@@ -59,15 +59,19 @@
 								case 'aboutmod':
 									$section_title = "關於門診修改";
 									break;
-								case 'posts':
-									$section_title = "Youtube登錄";
-									break;
 								case 'uploadimg':
 									$section_title = "上傳圖片";
 									break;
 								case 'uploadpdf':
 									$section_title = "上傳PDF";
-									break;									
+									break;
+								case 'postarticle':
+									$section_title = "PDF文章新增";
+									break;
+								case 'postytarticle':
+									$section_title = "youtube文章新增";
+									break;
+
 								default:
 									$section_title = "Sean 最帥";
 									break;
