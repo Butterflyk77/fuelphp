@@ -71,14 +71,14 @@ class Controller_Admin_Aboutmod extends Controller_Admin
 
 			if ($aboutmod->save())
 			{
-				Session::set_flash('success', e('Updated aboutmod #' . $id));
+				Session::set_flash('success', e('修改成功 #' . $id));
 
 				Response::redirect('admin/aboutmod');
 			}
 
 			else
 			{
-				Session::set_flash('error', e('Could not update aboutmod #' . $id));
+				Session::set_flash('error', e('沒有辦法修改喔QQ #' . $id));
 			}
 		}
 

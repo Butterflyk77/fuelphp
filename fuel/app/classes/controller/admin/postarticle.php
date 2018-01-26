@@ -38,14 +38,14 @@ class Controller_Admin_Postarticle extends Controller_Admin
 
 				if ($postarticle and $postarticle->save())
 				{
-					Session::set_flash('success', e('Added postarticle #'.$postarticle->id.'.'));
+					Session::set_flash('success', e('新增文章成功 #'.$postarticle->id.'.'));
 
 					Response::redirect('admin/postarticle');
 				}
 
 				else
 				{
-					Session::set_flash('error', e('Could not save postarticle.'));
+					Session::set_flash('error', e('新增文章失敗'));
 				}
 			}
 			else
@@ -76,14 +76,14 @@ class Controller_Admin_Postarticle extends Controller_Admin
 
 			if ($postarticle->save())
 			{
-				Session::set_flash('success', e('Updated postarticle #' . $id));
+				Session::set_flash('success', e('文章已經更新 #' . $id));
 
 				Response::redirect('admin/postarticle');
 			}
 
 			else
 			{
-				Session::set_flash('error', e('Could not update postarticle #' . $id));
+				Session::set_flash('error', e('文章沒有辦法更新 #' . $id));
 			}
 		}
 
@@ -115,12 +115,12 @@ class Controller_Admin_Postarticle extends Controller_Admin
 		{
 			$postarticle->delete();
 
-			Session::set_flash('success', e('Deleted postarticle #'.$id));
+			Session::set_flash('success', e('刪除了 #'.$id));
 		}
 
 		else
 		{
-			Session::set_flash('error', e('Could not delete postarticle #'.$id));
+			Session::set_flash('error', e('沒有辦法刪除喔QQ #'.$id));
 		}
 
 		Response::redirect('admin/postarticle');

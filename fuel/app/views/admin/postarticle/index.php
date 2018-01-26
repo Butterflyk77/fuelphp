@@ -17,7 +17,7 @@
 			<td><?php echo $item->title; ?></td>
 			<td><?php echo $item->subtitle; ?></td>
 			<td><?php echo $item->catalog; ?></td>
-			<td><?php echo $item->select_pdf; ?>
+			<td><?php echo $item->select_pdf; ?>：
 			<?php 
 				$a = $pdffiles[$item->select_pdf];
 				echo $a;
@@ -33,8 +33,8 @@
 </table>
 
 <?php else: ?>
-<p>沒有東西QQ</p>
-
+<p>沒有資料喔QQ</p>
+<p>快在下面新增~~</p>
 <?php endif; ?><p>
 	<?php echo Html::anchor('admin/postarticle/create', '新增新的文章', array('class' => 'btn btn-success')); ?>
 

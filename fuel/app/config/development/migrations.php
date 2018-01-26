@@ -12,6 +12,7 @@ return array (
         3 => '004_create_uploadimgs',
         4 => '005_create_uploadpdfs',
         5 => '006_create_postarticles',
+        6 => '007_create_postyoutubes',
       ),
     ),
     'module' => 

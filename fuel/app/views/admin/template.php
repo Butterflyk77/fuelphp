@@ -68,7 +68,7 @@
 								case 'postarticle':
 									$section_title = "PDF文章新增";
 									break;
-								case 'postytarticle':
+								case 'postyoutube':
 									$section_title = "youtube文章新增";
 									break;
 
